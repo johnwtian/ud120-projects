@@ -12,8 +12,12 @@
     
 import sys
 from time import time
-sys.path.append("../tools/")
+from sklearn.naive_bayes import GaussianNB
+
+#sys.path.append("../tools/")
+sys.path.insert(1, '/Users/John/Documents/GitHub/ud120-projects/tools')
 from email_preprocess import preprocess
+
 
 
 ### features_train and features_test are the features for the training
@@ -27,7 +31,12 @@ features_train, features_test, labels_train, labels_test = preprocess()
 #########################################################
 ### your code goes here ###
 
+sk = GaussianNB()
+sk.fit(features_train, labels_train)
 
+sk.predict(features_test)
+
+print(sk.score(features_test, labels_test))
 #########################################################
 
 
