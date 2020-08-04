@@ -33,13 +33,7 @@ clt = tree.DecisionTreeClassifier(min_samples_split=40)
 clt = clt.fit(features_train, labels_train)
 
 pred = clt.predict(features_test)
-print("1", labels_test)
-print("labels_test len", len(labels_test))
-print("features_test len", len(features_test))
 
-print("pred len", len(pred))
-
-print("pred", pred)
 labels_test = numpy.array(labels_test)
 labels_test = labels_test.reshape(-1,1)
 pred = pred.reshape(-1,1)
