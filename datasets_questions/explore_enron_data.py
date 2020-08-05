@@ -17,6 +17,15 @@
 
 import pickle
 #sys.path.insert(1, '/Users/John/Documents/GitHub/ud120-projects/
-enron_data = pickle.load(open("/Users/John/Documents/GitHub/ud120-projects/final_project/final_project_dataset.pkl", "rb"))
+enron_data = pickle.load(open("/Users/John/Documents/GitHub/ud120-projects/final_project/final_project_dataset.pkl", "r"))
 
 print(len(enron_data))
+sum = 0
+for key in enron_data:
+    if enron_data[key]['poi']==True:
+        sum += 1
+print(sum)
+
+value = enron_data['SKILLING JEFFREY K']
+
+print(value)
