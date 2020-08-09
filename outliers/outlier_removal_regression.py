@@ -9,8 +9,8 @@ from outlier_cleaner import outlierCleaner
 
 
 ### load up some practice data with outliers in it
-ages = pickle.load( open("practice_outliers_ages.pkl", "r") )
-net_worths = pickle.load( open("practice_outliers_net_worths.pkl", "r") )
+ages = pickle.load( open("/Users/John/Documents/GitHub/ud120-projects/practice_outliers_ages.pkl", "r") )
+net_worths = pickle.load( open("/Users/John/Documents/GitHub/ud120-projects/practice_outliers_net_worths.pkl", "r") )
 
 
 
